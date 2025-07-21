@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     var counterContainer = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func tapButton(_ sender: Any) {

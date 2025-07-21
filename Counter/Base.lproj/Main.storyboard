@@ -1,24 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqw-sg-RDL">
+                                <rect key="frame" x="24" y="519" width="345" height="251"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ЖМИ!"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJd-Fd-taP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-D5-osY">
+                                <rect key="frame" x="29" y="298" width="334" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sqw-sg-RDL" secondAttribute="trailing" constant="24" id="1hW-Yo-btR"/>
+                            <constraint firstItem="sqw-sg-RDL" firstAttribute="top" secondItem="3Ax-D5-osY" secondAttribute="bottom" constant="56" id="NYC-hi-9uP"/>
+                            <constraint firstItem="sqw-sg-RDL" firstAttribute="top" secondItem="3Ax-D5-osY" secondAttribute="bottom" constant="188" id="U4d-yj-Xrz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ax-D5-osY" secondAttribute="trailing" constant="27" id="VdK-s0-zDn"/>
+                            <constraint firstItem="sqw-sg-RDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="XKa-vH-E2i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sqw-sg-RDL" secondAttribute="bottom" constant="48" id="YOt-eB-eNm"/>
+                            <constraint firstItem="sqw-sg-RDL" firstAttribute="top" secondItem="3Ax-D5-osY" secondAttribute="bottom" constant="56" id="a6D-BC-36j"/>
+                            <constraint firstItem="sqw-sg-RDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="bRE-0w-O5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sqw-sg-RDL" secondAttribute="bottom" constant="48" id="cLZ-lU-PDp"/>
+                            <constraint firstItem="3Ax-D5-osY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="hmS-aH-JLL"/>
+                            <constraint firstItem="3Ax-D5-osY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="239" id="hoN-xy-vJC"/>
+                            <constraint firstItem="sqw-sg-RDL" firstAttribute="top" secondItem="3Ax-D5-osY" secondAttribute="bottom" constant="188" id="nTY-Sm-XML"/>
+                            <constraint firstItem="3Ax-D5-osY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="qhR-HZ-9Aw"/>
+                            <constraint firstItem="3Ax-D5-osY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="587.66999999999996" id="req-eE-1y3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ax-D5-osY" secondAttribute="trailing" constant="30" id="snO-Jn-sVX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sqw-sg-RDL" secondAttribute="trailing" constant="24" id="vPq-AT-0YC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countButton" destination="sqw-sg-RDL" id="2La-zh-4GM"/>
+                        <outlet property="countLabel" destination="3Ax-D5-osY" id="JL9-Ep-jVT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
